@@ -1,0 +1,112 @@
+<!-- Bismillah -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sipzy Shop!</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Have a BLAST, have a SIPZY!</h1>
+    <p>Wanna relax, with some tea? Don't forget your cookies too, cause this cup right here keeps your tea warm, for as LONG as you want!<br>Promise! :)</p>
+    <a href="#" class="cta-button">Order your Sipzy NOW!!!</a>
+  </header>
+
+  <main>
+  <section class="features">
+    <h2>What makes Sipzy your fav Mug?</h2>
+
+    <div class="feature">
+      <h3>#1 Maintains the perfect Temperature!</h3>
+      <p>Sipzy keeps your drink at your preferred temperature - Hot or Cold.</p>
+    </div>
+
+    <div class="feature">
+      <h3>#2 App Connected!</h3>
+      <p>Control Sipzy right from your phone. Set the temperature, the timings, get alerts and more.</p>
+    </div>
+
+    <div class="feature">
+      <h3>#3 Eco-Friendly</h3>
+      <p>Built with sustainable materials.</p>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Sipzy - Images</h2>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/1.webp" alt="Sipzy Mug 1"></div>
+        <div class="swiper-slide"><img src="images/2.webp" alt="Sipzy Mug 2"></div>
+        <div class="swiper-slide"><img src="images/3.webp" alt="Sipzy Mug 3"></div>
+        <div class="swiper-slide"><img src="images/4.webp" alt="Sipzy Mug 4"></div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="uses">
+    <h3>You can use your Sipzy for:</h3>
+    <ul>
+      <li>* Morning Coffee/Tea - To keep it warm during your work or meetings.</li>
+      <li>* Herbal Teas - Perfectly warm, every time.</li>
+      <li>* Baby Bottles - To keep milk warm and safe on the go.</li>
+      <li>* Cold Beverages = Maintains your drink's chill without watering down.</li>
+      <li>* Soups and Broths - Warm comfort, even at your desk.</li>
+    </ul>
+  </section>
+
+  <section class="testimonial">
+    <blockquote>
+      "Sipzy made my mornings much better! No more cold tea. It's perfect all the time!"
+      <cite>- Ana, Tea Lover</cite>
+    </blockquote>
+  </section>
+
+  <section class="final-cta">
+    <h2>Ready to Sip your PERFECT Drink?</h2>
+    <a href="#" class="cta-button">Join the Waitlist Now!</a>
+  </section>
+
+</main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Sipzy. All rights reserved.</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      spaceBetween: 20,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      effect: 'slide',
+      grabCursor: true,
+    });
+  </script>
+
+</body>
+</html>
